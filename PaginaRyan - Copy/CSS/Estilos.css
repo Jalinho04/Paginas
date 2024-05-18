@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+    margin-top: 200px;
+}
+
+/*repeat(3, 1fr);*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    padding: 20px 100px;
+    padding-left: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 100;
+    
+    
+}
+
+.logo{
+    font-size: 70px;
+    color: #FC33FF ;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.logos {
+    max-width: 7.5%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    font-size:30px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.navbar a:hover{
+    color: rgb(233, 233, 233);
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    transition: 1.5s;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+}
+
+.card{
+    width: 250px;
+    height: 400px;
+    transition: 1500ms;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 2px rgba(50,50,50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front{
+    background-image: url(../IMG/bladerunnerfrontz.jpg);
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.back{
+    background-image: url(../IMG/bladerunnerback.jpg);
+    transform: rotateY(180deg);
+    
+}
+
+h2{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 70%;
+    background-color: rgb(43, 42, 42);
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+    
+}
+
+
+.card2{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    transition: 1500ms;
+    transform-style: preserve-3d;
+
+}
+
+.front2,
+.back2{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 2px rgba(50,50,50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front2{
+    background-image: url(../IMG/crazystupidlovefront.jpg);
+}
+
+.card2:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.back2{
+    background-image: url(../IMG/crazystupidloveback.jpg);
+    transform: rotateY(180deg);
+    
+}
+
+
+
+.card3{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    transition: 1500ms;
+    transform-style: preserve-3d;
+
+}
+
+.front3,
+.back3{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 2px rgba(50,50,50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front3{
+    background-image: url(../IMG/drivefront.jpg);
+}
+
+ .card3:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.back3{
+    background-image: url(../IMG/driveback.jpg);
+    transform: rotateY(180deg);
+    
+}
+
+
+
+.card4{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    transition: 1500ms;
+    transform-style: preserve-3d;
+
+}
+
+.front4,
+.back4{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 2px rgba(50,50,50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front4{
+    background-image: url(../IMG/sebastianfront.jpg);
+}
+
+ .card4:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.back4{
+    background-image: url(../IMG/sebastianback.jpg);
+    transform: rotateY(180deg);
+    
+}
+
+
+
+
+.card5{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    transition: 1500ms;
+    transform-style: preserve-3d;
+
+}
+
+.front5,
+.back5{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 2px rgba(50,50,50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front5{
+    background-image: url(../IMG/kenfront.jpg);
+}
+
+.card5:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.back5{
+    background-image: url(../IMG/kenback.jpg);
+    transform: rotateY(180deg);
+    
+}
+
+
+.card6{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    transition: 1500ms;
+    transform-style: preserve-3d;
+
+}
+
+.front6,
+.back6{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 2px rgba(50,50,50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front6{
+    background-image: url(../IMG/theniceguyfront.jpg);
+}
+
+.card6:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.back6{
+    background-image: url(../IMG/theniceguyback.jpg);
+    transform: rotateY(180deg);
+    
+}
+
+
+
+.biografia{
+    color: #d3d0d0;
+    border: 10px;
+    border-radius: 5%;
+    background-color: rgb(58, 57, 57);
+    text-decoration: none;
+    font-weight: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    max-width: 50%;
+    padding: 5px;
+
+}
+h1{
+    padding: 10px;
+}
+
+form{
+padding: 30px;
+display: flex;
+flex-direction: column;
+}
+
+form input{
+    max-width: 300px;
+    height: 50px;
+}
+
+form select{
+    max-width: 300px;
+    height: 50px;
+}
+form label{
+    font-size: 30px;
+    color: #FC33FF ;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.todo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+
+input{
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.todo form input {
+    background-color: rgb(175, 175, 175);
+    
+}
+
+.todo form select{
+    background-color: rgb(175, 175, 175);
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+button:hover{
+    border-radius: 10px;
+    background-color: #7c7a7a;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+ .iconos   {
+    max-width: 10%;
+}
+
+footer{
+    background-color: rgb(202, 202, 202);
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.conte{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
